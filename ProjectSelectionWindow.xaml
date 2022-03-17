@@ -1,0 +1,20 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DyphaeIDE"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic" x:Class="DyphaeIDE.MainWindow"
+        mc:Ignorable="d"
+        Title="Dyphae - Project Manager" Height="500" Width="550">
+    <Grid x:Name="Background" Background="#FF131313">
+        <Label x:Name="AppName" Content="Dyphae" HorizontalAlignment="Left" Margin="85,17,0,0" VerticalAlignment="Top" Foreground="White" FontSize="48"/>
+        <Image x:Name="Logo" HorizontalAlignment="Left" Height="60" Margin="25,24,0,0" VerticalAlignment="Top" Width="60" Source="/logo.png"/>
+        <Button x:Name="NewProjectButton" Content="New Project" HorizontalAlignment="Left" Margin="25,96,0,0" VerticalAlignment="Top" Height="30" Width="105" FontSize="14" Background="#FF252525" Foreground="#FF08FF00" BorderBrush="#FF08FF00" Click="CreateNewProject"/>
+        <Button x:Name="DeleteProjectButton" Content="Remove Project" HorizontalAlignment="Left" Margin="275,96,0,0" VerticalAlignment="Top" Height="30" Width="116" FontSize="14" Background="#FF252525" Foreground="Red" BorderBrush="Red" FlowDirection="LeftToRight">
+        </Button>
+        <ListBox x:Name="ProjectList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="25,141,25,21" Background="#FF212121" BorderBrush="White" Foreground="White" Loaded="LoadProjects" HorizontalContentAlignment="Stretch"/>
+        <Button x:Name="NewProjectButton_Copy" Content="Open Project" HorizontalAlignment="Left" Margin="149,96,0,0" VerticalAlignment="Top" Height="30" Width="105" FontSize="14" Background="#FF252525" Foreground="#FF004AFF" BorderBrush="#FF004AFF"/>
+
+    </Grid>
+</Window>

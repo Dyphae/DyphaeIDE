@@ -1,0 +1,21 @@
+﻿<Window x:Class="DyphaeIDE.EditorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DyphaeIDE"
+        mc:Ignorable="d"
+        Title="Dyphae - Editor" Height="450" Width="800">
+    <Grid Background="#FF1D1D1D">
+        <TreeView Background="#FF171717" Foreground="White" HorizontalAlignment="Left" Width="256" Margin="0,27,0,0">
+            <ListBoxItem Content="Test"/>
+            <ListBoxItem Content="Another one"/>
+        </TreeView>
+        <ToolBar Height="27" VerticalAlignment="Top" Header="Dyphae" Background="#FF464646" Foreground="White">
+            <RibbonButton/>
+        </ToolBar>
+        <RichTextBox Margin="263,34,8,8" Background="#FF2B2B2B" BorderBrush="{x:Null}" Foreground="White" SelectionBrush="#FF008EFF" SelectionTextBrush="Black" AcceptsTab="True" IsDocumentEnabled="True">
+            <FlowDocument/>
+        </RichTextBox>
+    </Grid>
+</Window>
