@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DyphaeLanguage\DyphaeLanguage.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="logo.png" />
   </ItemGroup>
 
